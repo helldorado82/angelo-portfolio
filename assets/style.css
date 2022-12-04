@@ -1,11 +1,11 @@
 :root {
-  --primaryfont: Zen Dots;
-  /* --main-font-color: rgba(130, 14, 239, 0.575);*/
-  /* --main-font-color: white; */
+  --primaryfont: 'Zen Dots', serif;
   --main-font-color: rgb(238, 115, 146);
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -28,38 +28,47 @@ html {
 
 nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   list-style: none;
+  margin-bottom: 60px;
 
 }
 
-nav ul li {
+nav ul li{
   padding: 20px;
-  ;
+  min-width: min-content;
 }
 
 nav ul li a {
   text-decoration: none;
   font-family: var(--primaryfont);
   color: var(--main-font-color);
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
-
-
-
-
-.aboutme, .mywork, .contacts {
+.aboutme,
+.mywork,
+.contacts {
 
   font-family: var(--primaryfont);
   color: var(--primaryfont);
   /* position: relative; */
-margin-left: 10px;
-border-bottom: 3px solid var(--main-font-color);
+  margin-left: 10px;
+  border-bottom: 3px solid var(--main-font-color);
 
-  
+
 }
+
+nav h1{
+  color: white;
+  font-family: var(--primaryfont);
+  background: var(--main-font-color);
+  font-size: 1.8rem;
+  float: left;
+}
+
 .bio {
+  margin-top: 30px;
   max-width: 1024px;
   margin: 0 auto;
   /* margin-top: 40px; */
@@ -67,14 +76,7 @@ border-bottom: 3px solid var(--main-font-color);
   padding: 10px;
   width: 100%;
   min-height: 250px;
-  /* border: 3px  solid var(--main-font-color); */
-  /* max-height: 350px; */
-
-}
-
-.bio:hover {
-
-  border: 10px solid var(--main-font-color);
+  margin-bottom: 60px;
 }
 
 .bio img {
@@ -89,14 +91,15 @@ border-bottom: 3px solid var(--main-font-color);
 .bio p {
   margin: 10px;
   max-width: 800px;
-  color: white;
+  color: var(--main-font-color);
   font-family: var(--primaryfont);
 }
 
 
 .grid-container {
-  
+
   margin: 0 auto;
+  margin-bottom: 60px;
   max-width: 1024px;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -165,10 +168,10 @@ border-bottom: 3px solid var(--main-font-color);
 
 .footer-contacts {
   height: 7vh;
-  display:flex;
-  
-  justify-content:space-evenly;
- overflow: hidden;
+  display: flex;
+
+  justify-content: space-evenly;
+  overflow: hidden;
   background-color: bisque;
 }
 
@@ -177,5 +180,31 @@ border-bottom: 3px solid var(--main-font-color);
   color: var(--main-font-color);
   font-family: var(--primaryfont);
   margin: 0 auto;
+
+}
+
+@media screen and (max-width: 600px){
+ nav ul {
+  flex-direction: column;
+ }
+ .grid-container {
+  max-width: 500px;
+  grid-template-columns: 100%;
+  grid-template-rows: 8fr 3fr 3fr 3fr 3fr;
+  grid-template-areas:
+  "coffee"
+  "horiseon"
+  "something1"
+  "something2"
+  "something3";
+  height: 1000px;
+ }
   
+}
+
+@media screen and (max-width: 600px){
+
+  .skills {
+    font-size: 0.7rem;
+  }
 }

@@ -162,13 +162,14 @@ nav h1:hover {
   grid-area: something3;
 }
 
-.grid-area h2 {
+.grid-area a {
   color: var(--main-font-color);
   background-color: black;
   opacity: 0.6;
   padding: 4px;
   margin: 5px;
   font-family: var(--primaryfont);
+  text-decoration: none;
 }
 
 .footer-contacts {

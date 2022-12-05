@@ -1,6 +1,7 @@
 :root {
   --primaryfont: 'Zen Dots', serif;
-  --main-font-color: rgb(238, 115, 146);
+  /* --main-font-color: rgb(238, 115, 146); */
+  --main-font-color: rgb(25, 115, 146)
 }
 
 *,
@@ -166,7 +167,7 @@ nav h1:hover {
 .grid-area a {
   color: var(--main-font-color);
   background-color: black;
-  opacity: 0.6;
+  opacity: 0.8;
   padding: 4px;
   margin: 5px;
   font-family: var(--primaryfont);
@@ -179,7 +180,7 @@ nav h1:hover {
 
   justify-content: space-evenly;
   overflow: hidden;
-  background-color: bisque;
+  background-color: rgb(251, 235, 216);
 }
 
 .footer-contacts li {
@@ -206,12 +207,21 @@ nav h1:hover {
   "something3";
   height: 1000px;
  }
+
+ .footer-contacts {
+  flex-direction: column;
+  height: 10vh;
+ }
   
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 400px){
 
   .skills {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .bio {
+    flex-direction: column;
   }
 }

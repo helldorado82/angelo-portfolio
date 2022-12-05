@@ -73,6 +73,7 @@ nav h1:hover {
 }
 
 .bio {
+  display: flex;
   margin-top: 30px;
   max-width: 1024px;
   margin: 0 auto;
@@ -133,12 +134,12 @@ nav h1:hover {
 }
 
 #coffee {
-  background-image: url(/images/Screenshot\ 2022-12-04\ at\ 16.22.37.png);
+  background-image: url(/images/coffee.png);
   grid-area: coffee;
 }
 
 #horiseon {
-  background-image: url(/images/Screenshot\ 2022-12-04\ at\ 15.04.43.png);
+  background-image: url(/images/horiseon.png);
   grid-area: horiseon;
 }
 
@@ -148,17 +149,17 @@ nav h1:hover {
 }
 
 #something1 {
-  background-image: url(/images/glauber-sampaio-AARO0z1aF-A-unsplash.jpg);
+  background-image: url(/images/floral.jpg);
   grid-area: something1;
 }
 
 #something2 {
-  background-image: url(/images/s-o-c-i-a-l-c-u-t-6cuPFWYHANw-unsplash.jpg);
+  background-image: url(/images/urban.jpg);
   grid-area: something2;
 }
 
 #something3 {
-  background-image: url(/images/alexander-grey-NkQD-RHhbvY-unsplash.jpg);
+  background-image: url(/images/landscaping.jpg);
   grid-area: something3;
 }
 

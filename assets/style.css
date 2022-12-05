@@ -135,32 +135,32 @@ nav h1:hover {
 }
 
 #coffee {
-  background-image: url(/images/coffee.png);
+  background-image: url(/assets/images/coffee.png);
   grid-area: coffee;
 }
 
 #horiseon {
-  background-image: url(/images/horiseon.png);
+  background-image: url(/assets/images/horiseon.png);
   grid-area: horiseon;
 }
 
 #horiseon:hover {
-  background-image: url(/images/screenshot.gif);
+  background-image: url(/assets/images/screenshot.gif);
   grid-area: horiseon;
 }
 
 #something1 {
-  background-image: url(/images/floral.jpg);
+  background-image: url(/assets/images/floral.jpg);
   grid-area: something1;
 }
 
 #something2 {
-  background-image: url(/images/urban.jpg);
+  background-image: url(/assets/images/urban.jpg);
   grid-area: something2;
 }
 
 #something3 {
-  background-image: url(/images/landscaping.jpg);
+  background-image: url(/assets/images/landscaping.jpg);
   grid-area: something3;
 }
 

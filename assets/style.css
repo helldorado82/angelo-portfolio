@@ -1,3 +1,5 @@
+
+/* CSS variables */
 :root {
   --primaryfont: 'Zen Dots', serif;
   /* --main-font-color: rgb(238, 115, 146); */
@@ -18,7 +20,7 @@ html {
   height: 100%;
 
 }
-
+/* Background image */
 .backg {
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
   height: 100%;
@@ -27,12 +29,12 @@ html {
   background-size: cover;
 }
 
+/* Nav bar */
 nav ul {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
   margin-bottom: 60px;
-
 }
 
 nav ul li{
@@ -45,19 +47,6 @@ nav ul li a {
   font-family: var(--primaryfont);
   color: var(--main-font-color);
   font-size: 1.6rem;
-}
-
-.aboutme,
-.mywork,
-.contacts {
-
-  font-family: var(--primaryfont);
-  color: var(--primaryfont);
-  /* position: relative; */
-  margin-left: 10px;
-  border-bottom: 3px solid var(--main-font-color);
-
-
 }
 
 nav h1{
@@ -73,13 +62,18 @@ nav h1:hover {
   background: white;
 }
 
+.heading {
+  font-family: var(--primaryfont);
+  color: var(--primaryfont);
+  margin-left: 10px;
+  border-bottom: 3px solid var(--main-font-color);
+}
+/* Bio section */
 .bio {
   display: flex;
   margin-top: 30px;
   max-width: 1024px;
   margin: 0 auto;
-  /* margin-top: 40px; */
-  opacity: 1;
   padding: 10px;
   width: 100%;
   min-height: 250px;
@@ -91,7 +85,6 @@ nav h1:hover {
   height: auto;
   margin: 10px;
   float: left;
-
 }
 
 
@@ -102,9 +95,8 @@ nav h1:hover {
   font-family: var(--primaryfont);
 }
 
-
+/* My work section */
 .grid-container {
-
   margin: 0 auto;
   margin-bottom: 60px;
   max-width: 1024px;
@@ -173,7 +165,7 @@ nav h1:hover {
   font-family: var(--primaryfont);
   text-decoration: none;
 }
-
+/* Footer section */
 .footer-contacts {
   height: 7vh;
   display: flex;
@@ -191,6 +183,7 @@ nav h1:hover {
 
 }
 
+/* Media queries */
 @media screen and (max-width: 600px){
  nav ul {
   flex-direction: column;
